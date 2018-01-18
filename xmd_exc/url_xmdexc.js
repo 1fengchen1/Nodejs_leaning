@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const xmd_exc = ctx => {
 	ctx.response.type = 'html';
-	ctx.response.body = fs.createReadStream('../html/xmd_exc.html');
+	ctx.response.body = fs.createReadStream('../xmd_exc/templates/xmd_exc.html');
 };
 
 module.exports = xmd_exc;

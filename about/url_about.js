@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const index = ctx => {
 	ctx.response.type = 'html';
-	ctx.response.body = fs.createReadStream('../html/index.html');
+	ctx.response.body = fs.createReadStream('../about/templates/about.html');
 };
 
 module.exports = index;
